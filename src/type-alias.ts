@@ -8,7 +8,7 @@ interface Action {
 
 type UserAction = User & Action;
 
-function createUserAction(u: User, a: Action): UserAction {
+function createUserAction2(u: User, a: Action): UserAction {
   return { ...u, ...a };
 }
 

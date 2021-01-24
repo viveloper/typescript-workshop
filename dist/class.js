@@ -1,13 +1,13 @@
 class Cart {
     constructor(user) {
         this.user = user;
-        this.store = new Map();
+        this.store = {};
     }
     put(id, product) {
-        this.store.set(id, product);
+        this.store[id] = product;
     }
     get(id) {
-        return this.store.get(id);
+        return this.store[id];
     }
 }
 const cartJohn = new Cart({ name: 'john' });
