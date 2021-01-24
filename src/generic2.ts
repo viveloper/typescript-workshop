@@ -17,9 +17,8 @@ class LocalDB<T> {
 
 interface User {
   name: string;
-  age: number;
 }
 
 const userDB = new LocalDB<User>('user');
-userDB.add({ name: 'jay', age: 22 });
+userDB.add({ name: 'jay' });
 const userA = userDB.get();
